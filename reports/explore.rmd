@@ -1,0 +1,13 @@
+`r opts_knit$set(root.dir='..')`      
+
+# Initialise Project
+```{r}
+library(ProjectTemplate); load.project()
+```             
+
+# Explore
+```{r}
+
+```
+
+
