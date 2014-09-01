@@ -1,7 +1,6 @@
-`r opts_knit$set(root.dir='..')`      
-
 # Initialise Project
 ```{r}
+if(basename(getwd()) == "reports") setwd("..") # necessary to work with projecttemplate
 library(ProjectTemplate); load.project()
 ```             
 

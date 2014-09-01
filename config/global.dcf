@@ -6,3 +6,4 @@ load_libraries: on
 libraries: psych, lattice, Hmisc
 as_factors: off
 data_tables: off
+recursive_loading: on
