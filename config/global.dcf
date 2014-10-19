@@ -8,4 +8,4 @@ as_factors: FALSE
 data_tables: FALSE
 recursive_loading: TRUE
 version: 0.6
-attach_internal_libraries: TRUE
+attach_internal_libraries: FALSE
