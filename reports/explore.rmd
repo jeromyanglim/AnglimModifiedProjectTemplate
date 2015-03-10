@@ -1,6 +1,10 @@
 # Initialise Project
-```{r}
-if(basename(getwd()) == "reports") setwd("..") # necessary to work with projecttemplate
+```{r knitr_configuration}
+library(knitr)
+opts_knit$set(root.dir = normalizePath('../')) # required when rmd is in subdirectory
+```
+
+```{r load_project}
 library(ProjectTemplate); load.project()
 ```             
 
