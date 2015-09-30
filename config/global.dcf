@@ -1,9 +1,9 @@
 data_loading: TRUE
-cache_loading: FALSE
+cache_loading: TRUE
 munging: TRUE
-logging: FALSE
+logging: TRUE
 load_libraries: TRUE
-libraries: psych, lattice, Hmisc
+libraries: reshape, plyr, ggplot2, stringr, lubridate
 as_factors: FALSE
 data_tables: FALSE
 recursive_loading: TRUE
