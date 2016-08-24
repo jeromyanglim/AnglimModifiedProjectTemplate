@@ -1,0 +1,22 @@
+# Initialise Project
+```{r adjust_directory_if_needed}
+# Uncomment lines below if rmd file is placed in a subdirectory
+# library(knitr)
+# opts_knit$set(root.dir = normalizePath('../')) 
+```
+
+```{r load_project}
+# 1. Set options in config/global.dcf
+# 2. Load packages listed in config/global.dcf
+# 3. Import functions and coe in lib directory
+# 4. Load data in data directory
+# 5. Run data manipulations in munge directory 
+library(ProjectTemplate); load.project()
+```             
+
+# Explore
+```{r}
+
+```
+
+
