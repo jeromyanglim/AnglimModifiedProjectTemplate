@@ -3,7 +3,7 @@ cache_loading: FALSE
 munging: TRUE
 logging: FALSE
 load_libraries: TRUE
-libraries: psych, lattice, Hmisc, ggplot2
+libraries: psych, lattice, Hmisc, ggplot2, readxl
 as_factors: FALSE
 data_tables: FALSE
 recursive_loading: TRUE

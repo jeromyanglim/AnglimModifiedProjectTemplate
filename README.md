@@ -1,7 +1,5 @@
-# AnglimModifiedProjectTemplate
-# Version 0.5
+# AnglimModifiedProjectTemplate (v 0.5)
 
-# Overview
 ProjectTemplate is an R Package which facilitates data analysis with R. It makes it easy to start a new data analysis project. In short, if you analyse data with R, it is awesome and worth learning.
 
 I have modified the default ProjectTemplate folder structure to align more with my workflow. 
@@ -9,15 +7,14 @@ However, I think these tweaks should be useful for others.
 More information is described below.
 
 
-
-
-
 # System Requirements
 * Install R https://cran.rstudio.com/
 * Install Rstudio https://www.rstudio.com/products/rstudio/download3/
 * Install R packages: `knitr`, `ProjectTemplate`  (e.g., `install.packages("knitr")`)
 * Install any R packages required for data import or listed in `config/global.dcf`
-* Install any dependencies of these R packages. In particular, I use xls files to store some data, which requires a Perl installation http://www.perl.org/get.html ; OSX and Linux generally come with perl installed; On Windows OS you need to install it (or just remove the two xls files from the data directory).
+
+In addition:
+* Install any dependencies of these R packages. In particular, if you use xls files to store some data. You may need to install Perl: http://www.perl.org/get.html ; OSX and Linux generally come with perl installed; On Windows OS you need to install it.
 * If you want to be able to knit to pdf, then get a TeX distribution (https://www.latex-project.org/get/); otherwise, just knit to Word or HTML.
 
 
@@ -39,7 +36,7 @@ You're now ready to start manipulating and analysing your data.
 
 
 # Debugging and General Tips
-* **What if the data does not import correctly?** In some cases, the default data import rules used by ProjectTemplate do not work as you might want. In that case, you can add your own code to import the data. Place this code in an R script in the `lib` directory (e.g., `data-import-override.r`). If the data is not importing at all, this can be a sign of several things (you don't have a package installed; you don't have dependency like Perl or Java installed; the data has formatting issues).
+* **What if the data does not import correctly?** In some cases, the default data import rules used by ProjectTemplate do not work as you might want. In that case, you can add your own code to import the data. Place this code in an R script in the `lib` directory (e.g., `data-import-override.r`). If the data is not importing at all, this can be a sign of several things (you don't have a package installed; you don't have dependency like Perl or Java installed; the data has formatting issues). For more information about file formats in ProjectTemplate see http://projecttemplate.net/file_formats.html ).
 
 * **What if there is an error in my data manipulation code (i.e., munge files)?** Clear the workspace (i.e., click the broom in Rstudio or run `rm(list=ls())`. Then run `library(ProjectTemplate); load.project(list(munging=FALSE))`. This will load the data, import packages and so on, but wont run the data manipulation code. Then run each line in the data manipulation file until you encounter the error. Then it's just a matter of adopting normal debugging procedures. Make sure the data manipulation file is saved.
 
@@ -74,13 +71,14 @@ v. 0.5
 * Added this readme file to explain how projectTemplate works
 * Added ggplot2 as default package in global.dcf
 * Disabled saving and loading of R Workspaces in the Rstudio project file as this workflow works against the purpose of ProjectTemplate
-* Add file `raw-data/import-raw-data.r` as a place holder file for preparing initial data files
+* Added file `raw-data/import-raw-data.r` as a place holder file for preparing initial data files
 * Created a change log and version information.
+* Added file `lib/importxls.r`. It reads my two default xls files in the data directory using the `readxl` package rather than `gdata`. `readxl` has the advantage that it does have an external dependency on perl.
 
 
 v. 0.4 
 
-* Add `raw-data` directory as a standardised location for converting raw data into data suitable for the data directory (i.e., convert original file names to those suitable for data directory; 
+* Added `raw-data` directory as a standardised location for converting raw data into data suitable for the data directory (i.e., convert original file names to those suitable for data directory; 
 * Updated `config/global.dcf` to reflect updates to ProjectTemplate (v 0.6)
 
 
@@ -88,8 +86,8 @@ v. 0.1
 * Modified default global.dcf (`as_factors: off` and changd default packages)
 * Made readme.md blank
 * Removed a couple of directories  (e.g., diagnositics, logs, profiling)
-* An initial rmd file  in the reports directory
-* An .Rproj RStudio project file to enable easy launching of RStudio.
+* Added an initial Rmarkdown file in the reports directory
+* Added RStudio project file (i.e., .Rproj) to enable easy launching of RStudio.
 * Created output directory as the general location for saving all output (figures, tables, data files). This name seemed more appropriate than the built-in "graphs" diretory.
 * Added `output/output-processing.xlsx` for manually preparing tables from exported data
 * Added `data/meta.xls` as general file for storing meta data (e.g., scoring rules for psychological tests)
