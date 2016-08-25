@@ -26,7 +26,6 @@ xls.reader <- function(data.file, filename, workbook.name)
      }
 }
 
-
-xls.reader(data.file = "input.xls", filename = "data/input.xls", "input")
-xls.reader(data.file = "meta.xls", filename = "data/meta.xls", "meta")
+if (file.exists("data/input.xls")) xls.reader(data.file = "input.xls", filename = "data/input.xls", "input")
+if (file.exists("data/meta.xls")) xls.reader(data.file = "meta.xls", filename = "data/meta.xls", "meta")
 
