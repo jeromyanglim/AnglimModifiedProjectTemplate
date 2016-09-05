@@ -16,3 +16,10 @@
 #    names(df) <- tolower(names(df))
 #    It can also be an opportunity to make variable names more consistent
 # 5. Remove unnecessary variables. 
+
+
+# Start of script
+# Useful first command to load included packages and set options, 
+# but usually you don't want munging or data loading
+# at this stage:
+library(ProjectTemplate); load.project(list(munging=FALSE, data_loading = FALSE))
