@@ -73,7 +73,7 @@ v. 0.5
 * Disabled saving and loading of R Workspaces in the Rstudio project file as this workflow works against the purpose of ProjectTemplate
 * Added file `raw-data/import-raw-data.r` as a place holder file for preparing initial data files
 * Created a change log and version information.
-* Added file `lib/importxls.r`. It reads my two default xls files in the data directory using the `readxl` package rather than `gdata`. `readxl` has the advantage that it does have an external dependency on perl.
+* Added file `lib/importxls.r`. It reads my two default xls files in the data directory using the `readxl` package rather than `gdata`. `readxl` has the advantage that it does not have an external dependency on perl.
 
 
 v. 0.4 
