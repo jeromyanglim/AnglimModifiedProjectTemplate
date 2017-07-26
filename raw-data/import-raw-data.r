@@ -22,4 +22,5 @@
 # Useful first command to load included packages and set options, 
 # but usually you don't want munging or data loading
 # at this stage:
+# rm(list = ls())
 library(ProjectTemplate); load.project(list(munging=FALSE, data_loading = FALSE))

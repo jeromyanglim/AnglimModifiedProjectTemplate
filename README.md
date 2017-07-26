@@ -64,6 +64,12 @@ For some steps, you have the choice between refreshing the project or adopting a
 
 # Change log
 
+
+v. 0.5.1
+
+* added `rm(list=ls())` in various location to make it easier to reset project before running
+  `library(ProjectTemplate); load.project()`
+
 v. 0.5
 
 * Moved rmd files out of reports directory (rmd files are simpler to understand when they are in the working directory, even if they do create a little clutter)

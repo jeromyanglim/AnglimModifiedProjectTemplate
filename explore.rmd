@@ -11,6 +11,9 @@
 # 3. Import functions and coe in lib directory
 # 4. Load data in data directory
 # 5. Run data manipulations in munge directory 
+
+# optionally refresh workspace
+# rm(list = ls())
 library(ProjectTemplate); load.project()
 ```             
 
