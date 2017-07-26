@@ -12,8 +12,7 @@
 # 4. Load data in data directory
 # 5. Run data manipulations in munge directory 
 
-# optionally refresh workspace
-# rm(list = ls())
+rm(list = ls()) # optionally refresh workspace
 library(ProjectTemplate); load.project()
 ```             
 
