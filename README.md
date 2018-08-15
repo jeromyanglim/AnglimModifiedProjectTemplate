@@ -1,4 +1,4 @@
-# AnglimModifiedProjectTemplate (v 0.5)
+# AnglimModifiedProjectTemplate (v 0.5.2)
 
 ProjectTemplate is an R Package which facilitates data analysis with R. It makes it easy to start a new data analysis project. In short, **ProjectTemplate is awesome and worth learning**.
 
@@ -64,6 +64,9 @@ For some steps, you have the choice between refreshing the project or adopting a
 
 # Change log
 
+v. 0.5.2
+
+* Added function to prevent tibble conversion of imported data.frames
 
 v. 0.5.1
 
