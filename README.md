@@ -64,6 +64,14 @@ For some steps, you have the choice between refreshing the project or adopting a
 
 # Change log
 
+v. 0.6
+
+* Migrated project to make global.dcf consistent with version 0.9 of ProjectTemplate
+* Default is data_frame
+* Removed "data/input.xls"; it seemed to be distracting new users
+* Hide code that deals with overriding tibble conversion now that their an option to 
+  to use data frames.
+
 v. 0.5.2
 
 * Added function to prevent tibble conversion of imported data.frames

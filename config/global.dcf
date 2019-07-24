@@ -5,12 +5,12 @@ logging: FALSE
 load_libraries: TRUE
 libraries: psych, Hmisc, ggplot2, readxl, foreign, lme4, lavaan
 as_factors: FALSE
-data_tables: FALSE
 recursive_loading: TRUE
-version: 0.8.2
+version: 0.9.0
 attach_internal_libraries: FALSE
 data_loading_header: TRUE
 data_ignore:
 logging_level: INFO
 cache_loaded_data: FALSE
 sticky_variables: NONE
+tables_type: data_frame
